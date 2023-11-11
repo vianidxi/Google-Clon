@@ -1,0 +1,240 @@
+body{    background-color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    margin-right: 25px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav .nav-right-section a:hover {
+
+    text-decoration: underline; 
+}
+
+
+nav .nav-right-section .menu{
+    background-image: url(/imagenes/Menu.png);
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    margin-right: 1px;
+    margin-bottom: 2px;
+    filter: brightness(0.5);
+}
+
+nav .nav-right-section .menu:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+nav .nav-right-section img{
+    /*redondeando bordes*/
+    border-radius: 1000%;
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    padding-left: 0;
+    margin-right: -30px;
+    margin-top: 1px;
+}
+
+nav .nav-right-section img:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+main{
+    margin-top: 28px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+main .main-logo{
+    width: 300px;
+    margin: 0 auto;
+
+}
+
+main .main-logo img{
+    width: 272px;
+    height: 92px;
+    object-position: center bottom;
+}
+
+main .main-input{
+    width: 580px;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex; 
+    align-items: center;
+}
+
+main .main-input-container {
+    border: 1px solid #dfe1e5; 
+    border-radius: 24px;
+    width: 100%;
+    padding: 5px 8px 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+main .main-input input{
+    border: none;
+    outline: none;
+    color: rgba(0,0,0,.87);
+    line-height: 22px;
+    width: 100%;
+    height: 27px;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+/*main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 7px;
+    margin-right: 5px;
+}*/
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 24px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+
+
+main .main-buttons{
+    margin-top: 15px;
+    text-align: center;
+    color: #202124;
+}
+
+main .main-buttons button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: rgb(66,66,66);
+    transition: border-color;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    margin: 12px 4px;
+    padding: 0 16px;
+    line-height: 30px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+main .main-buttons button:hover {
+    border-color: #dadce0; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); 
+}
+
+
+footer{
+    background-color: #f2f2f2;
+    text-align: center;
+    color: #5f6368; 
+    font-size: 14px;
+    position: relative;
+    margin-left: 0; 
+    overflow: hidden;
+}
+
+footer .footer-container {
+    margin-top: -5px;
+    padding: 15px 35px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+footer .footer-pais{
+    border-bottom: 0.5px solid #dadce0;;
+    text-align: start;
+    justify-content: space-between;
+    padding: 15px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+footer .footer-pais p{
+    letter-spacing: 0.1px;
+    width: 100%;
+    margin: 0;
+}
+
+footer .footer-links{
+    display: flex;
+}
+
+footer .footer-links a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: #5f6368;
+    text-decoration: none;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-links .footer-left-link{
+    margin-right: 6px;
+    margin-left: 20px;
+    color: #5f6368;
+}
